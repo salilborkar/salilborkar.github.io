@@ -17,35 +17,60 @@
             margin: 0;
             padding: 0;
             font-family: Sans-serif;
-            background-image: url('salil.JPG');
-            background-size: cover;
-            background-position: right center;
-            background-attachment: fixed;
-            background-repeat: no-repeat;
+            background-color: #f5f5f5; /* Match content background */
             height: 100vh;
             display: flex;
+            justify-content: flex-end;
             align-items: center;
-            justify-content: flex-end; /* Push content box to the right */
         }
 
         .content {
-            padding: 40px;
-            margin: 40px;
-            max-width: 600px;
-            color: black;
+            display: flex;
+            flex-direction: row;
             background-color: rgba(255, 255, 255, 0.85);
             border-radius: 12px;
             box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+            margin: 40px;
+            max-width: 900px;
+            width: 90%;
+            height: auto;
+            overflow: hidden;
+        }
+
+        .image-section {
+            flex: 1;
+            min-width: 250px;
+            max-width: 350px;
+        }
+
+        .image-section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
+
+        .text-section {
+            flex: 2;
+            padding: 40px;
+            color: black;
         }
 
         @media (max-width: 768px) {
             body {
-                justify-content: center; /* center content on smaller screens */
+                justify-content: center;
             }
 
             .content {
-                margin: 20px;
-                padding: 30px 20px;
+                flex-direction: column;
+            }
+
+            .image-section {
+                max-height: 300px;
+            }
+
+            .text-section {
+                padding: 20px;
             }
         }
 
@@ -77,13 +102,18 @@
     <!-- End Google Tag Manager (noscript) -->
 
     <div class="content">
-        <h1>Salil Borkar</h1>
-        <p>Hello, world</p>
-        <p>I'm a product guy at the intersection of data, AI, and technology-driven cloud-native data platforms. I started my career 15+ years back as a software engineer, after a dual degree in computer sciences.<br><br>
-        Technology and products created using technology is what interests me & love talking about cloud computing, data & its architecture, AI, finance & personal wellbeing.<br><br>
-        I'm an audiophile, a traveler, an <a href="https://www.flickr.com/photos/salilborkar/">amateur photographer</a>, a <a href="https://www.goodreads.com/salilborkar">bibliophile</a> and an <a href="https://betweenmillionthings.wordpress.com">occasional writer</a>.<br><br>
-        </p>   
-        <p>I stay in san diego and can be reached <a href="mailto:salil_borkar@hotmail.com">here</a>.</p>
+        <div class="image-section">
+            <img src="salil.JPG" alt="Salil Borkar">
+        </div>
+        <div class="text-section">
+            <h1>Salil Borkar</h1>
+            <p>hello, world.</p>
+            <p>i'm a product guy at the intersection of data, AI and technology-driven, cloud-native data platforms. i started my career 15+ years ago as a software engineer, after a dual degree in computer sciences.<br><br>
+            technology and products created using technology is what interests me & I love talking about cloud computing, data & its architecture, ai, finance & personal wellbeing.<br><br>
+            i'm an audiophile, a traveler, an <a href="https://www.flickr.com/photos/salilborkar/">amateur photographer</a>, a <a href="https://www.goodreads.com/salilborkar">bibliophile</a> and an <a href="https://betweenmillionthings.wordpress.com">occasional writer</a>.<br><br>
+            </p>   
+            <p>i live in the vibrant city of san diego, ca and can be reached <a href="mailto:salil_borkar@hotmail.com">here</a>.</p>
+        </div>
     </div>
 </body>
 </html>
