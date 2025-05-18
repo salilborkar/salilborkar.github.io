@@ -19,18 +19,19 @@
             font-family: Sans-serif;
             background-image: url('salil.JPG');
             background-size: cover;
-            background-position: center;
+            background-position: left center;
             background-attachment: fixed;
+            background-repeat: no-repeat;
             height: 100vh;
             display: flex;
             align-items: center;
-            justify-content: center;
+            justify-content: flex-end; /* Push content box to the right */
         }
 
         .content {
             padding: 40px;
-            margin: 20px;
-            max-width: 700px;
+            margin: 40px;
+            max-width: 600px;
             color: black;
             background-color: rgba(255, 255, 255, 0.85);
             border-radius: 12px;
@@ -38,7 +39,12 @@
         }
 
         @media (max-width: 768px) {
+            body {
+                justify-content: center; /* center content on smaller screens */
+            }
+
             .content {
+                margin: 20px;
                 padding: 30px 20px;
             }
         }
@@ -72,7 +78,7 @@
 
     <div class="content">
         <h1>Salil Borkar</h1>
-        <p>Hello, & welcome to my personal page.</p>
+        <p>Hello, world</p>
         <p>I'm a technologist at the intersection of data, AI, technology-driven, cloud-hosted data platforms. I started my career 15+ years ago as a software engineer, after a dual degree in computer sciences.<br><br>
         I am passionate about technology and products created using technology & love talking about cloud computing, data & its architecture, AI, finance & personal wellbeing.<br><br>
         I'm an audiophile, a traveler, an <a href="https://www.flickr.com/photos/salilborkar/">amateur photographer</a>, a <a href="https://www.goodreads.com/salilborkar">bibliophile</a> and an <a href="https://betweenmillionthings.wordpress.com">occasional writer</a>.<br><br>
