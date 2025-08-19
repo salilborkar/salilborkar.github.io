@@ -12,16 +12,24 @@
     <!-- End Google Tag Manager -->
 
     <title>Salil Borkar</title>
+
+    <!-- Favicon with initials -->
+    <link rel="icon" href="data:image/svg+xml,
+    <svg xmlns='http://www.w3.org/2000/svg' width='64' height='64'>
+      <rect width='100%' height='100%' fill='%230077cc'/>
+      <text x='50%' y='55%' font-size='28' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'>SB</text>
+    </svg>">
+
     <style>
         body {
             margin: 0;
             padding: 0;
             font-family: Sans-serif;
-            background-color: #f5f5f5; /* Match content background */
+            background-color: #f5f5f5;
             height: 100vh;
             display: flex;
-            justify-content: flex-end;
-            align-items: center;
+            justify-content: center;   /* centered horizontally */
+            align-items: center;       /* centered vertically */
         }
 
         .content {
@@ -41,36 +49,59 @@
             flex: 1;
             min-width: 250px;
             max-width: 350px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .image-section img {
-            width: 100%;
-            height: 100%;
+            width: 250px;               /* fixed square size */
+            height: 250px;
             object-fit: cover;
-            display: block;
+            border-radius: 50%;         /* circular photo */
+            border: 4px solid #fff;     /* clean white border */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
         }
 
         .text-section {
             flex: 2;
             padding: 40px;
             color: black;
+
+            display: flex;              
+            flex-direction: column;     
+            justify-content: center;    /* vertical center */
+            align-items: center;        /* horizontal center */
+            text-align: center;         /* center text lines */
+
+            max-width: 600px;           /* keeps paragraphs readable */
+            margin: 0 auto;             
         }
 
         @media (max-width: 768px) {
             body {
                 justify-content: center;
+                align-items: flex-start;   /* let content scroll */
+                padding: 20px;
+                height: auto;
             }
 
             .content {
-                flex-direction: column;
+                flex-direction: column;    /* stack image + text */
+                align-items: center;
+                width: 100%;
+                margin: 0;
             }
 
             .image-section {
                 max-height: 300px;
+                width: 100%;
             }
 
             .text-section {
                 padding: 20px;
+                max-width: 100%;
             }
         }
 
