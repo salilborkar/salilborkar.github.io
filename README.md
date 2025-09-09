@@ -1,47 +1,47 @@
-# Hi, I'm Salil Borkar 👋
+# 👋 Hi, I'm Salil Borkar
 
-**Software Engineer turned Product Manager** | Passionate about building and driving technical products
-
----
-
-## 👨‍💻 About Me
-
-I’m a software engineer turned product manager thriving at the intersection of technology and product development. With a strong foundation in Python, data infrastructure, architecture, and analytics platforms, I love transforming complex problems into impactful solutions.
-
-### What I Do
-
-- Architect and build analytics platforms and data infrastructure for SaaS and healthcare
-- Specialize in Python, data visualization (matplotlib), and technical writing
-- Lead product development, translating user needs into scalable software
-
-### Selected Projects
-
-- **Data Visualization in Python**: [Explore the Repo](https://github.com/salilborkar/Data-Visualization-in-Python)
-- **Cloud-native Analytics for Healthcare**: Built analytics infra for 2 healthcare clients
-- **SaaS Analytics Solutions**: Delivered platforms for 5 SaaS products, including a recommendation system that improved customer wellbeing by 20%
-- **Personal Website**: [salilborkar.github.io](https://salilborkar.github.io)
+**Software Engineer turned Product Manager** | Data Infrastructure & Analytics Enthusiast
 
 ---
 
-## 🛠️ Skills
+## 💡 About Me
 
-- **Languages:** Python
-- **Expertise:** Data Infrastructure, Architecture, Analytics Platforms, Product Development, Technical Writing
+I'm a software engineer turned product manager passionate about building and driving the development of technical products. My journey spans data architecture, analytics platforms, and cloud-native solutions—empowering businesses to make impactful, data-driven decisions.
 
----
-
-## 🌱 Outside Work
-
-Roadtrips 🚗 | Classic Rock & Classical Music 🎸🎼 | Books 📚 | Fitness & Meditation 🏋️‍♂️🧘
+Outside of work, you'll find me road-tripping, immersed in classic rock & classical music, reading, blogging & writing poetry, working out, and meditating. I believe in blending technology, creativity, and wellbeing to make a true difference.
 
 ---
 
-## 📫 Connect With Me
+## 🛠️ Skills & Specialties
+
+- **Programming:** Python
+- **Expertise:** Data Infrastructure | Data Architecture | Analytics Platforms
+- **Product:** Cloud-native solutions | SaaS Products | Recommendation Systems
+
+---
+
+## 🚀 Favorite Projects & Achievements
+
+- **[Data Visualization in Python](https://github.com/salilborkar/Data-Visualization-in-Python):** A comprehensive guide to visualizing data using Python & Matplotlib.
+- **Cloud-Native Analytics Infrastructure:** Designed and built platforms for 2 healthcare clients and 5 SaaS products.
+- **Recommendation System:** Engineered a system that improved customer wellbeing by 20%.
+
+---
+
+## 📬 Connect & Find Me
 
 - [LinkedIn](https://linkedin.com/in/salilborkar)
-- [Website](https://salilborkar.github.io)
+- [Personal Website](https://salilborkar.github.io)
 - 📧 Email: salilwrites@yahoo.com
 
 ---
 
-> “Enjoying the journey from hands-on engineering to shaping products that matter.”
+## ⚡ Fun Facts
+
+- Big fan of road trips 🚗, classic rock 🎸, classical music 🎼
+- Enjoy writing blogs & poetry ✍️
+- Fitness & meditation enthusiast 🧘‍♂️
+
+---
+
+> “Building products that empower people, one line of code at a time.”
