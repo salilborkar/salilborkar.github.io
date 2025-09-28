@@ -1,12 +1,12 @@
 # 👋 Hi, I'm Salil Borkar
 
-**Software Engineer turned Product Manager** | Data Infrastructure & Analytics Enthusiast
+**Software Engineer turned Product Manager** | Data Infrastructure, Analytics & AI Enthusiast
 
 ---
 
 ## 💡 About Me
 
-I'm a software engineer turned product manager passionate about building and driving the development of technical products. My journey spans data architecture, analytics platforms, and cloud-native solutions—empowering businesses to make impactful, data-driven decisions.
+I'm a software engineer turned product manager passionate about building and driving the development of technical products. My journey spans data architecture, analytics platforms, and cloud-native and AI solutions empowering businesses to make impactful, data-driven decisions.
 
 Outside of work, you'll find me road-tripping, immersed in classic rock & classical music, reading, blogging & writing poetry, working out, and meditating. I believe in blending technology, creativity, and wellbeing to make a true difference.
 
@@ -15,7 +15,7 @@ Outside of work, you'll find me road-tripping, immersed in classic rock & classi
 ## 🛠️ Skills & Specialties
 
 - **Programming:** Python
-- **Expertise:** Data Infrastructure | Data Architecture | Analytics Platforms
+- **Expertise:** AI | Data Infrastructure | Data Architecture | Analytics Platforms
 - **Product:** Cloud-native solutions | SaaS Products | Recommendation Systems
 
 ---
@@ -23,8 +23,9 @@ Outside of work, you'll find me road-tripping, immersed in classic rock & classi
 ## 🚀 Favorite Projects & Achievements
 
 - **[Data Visualization in Python](https://github.com/salilborkar/Data-Visualization-in-Python):** A comprehensive guide to visualizing data using Python & Matplotlib.
+- - **[Retrival Augemented Generation (RAG) in Python](https://github.com/salilborkar/simple-RAG-about-san-diego):** A simple conversational AI chatbot to ask questions and get answers to regarding my 2nd favorite city - San Diego.
 - **Cloud-Native Analytics Infrastructure:** Designed and built platforms for 2 healthcare clients and 5 SaaS products.
-- **Recommendation System:** Engineered a system that improved customer wellbeing by 20%.
+- **Recommendation System:** Engineered a system that improved customer wellbeing by 25%.
 
 ---
 
@@ -32,13 +33,13 @@ Outside of work, you'll find me road-tripping, immersed in classic rock & classi
 
 - [LinkedIn](https://linkedin.com/in/salilborkar)
 - [Personal Website](https://salilborkar.github.io)
-- 📧 Email: salilwrites@yahoo.com
+- 📧 Email: salil_borkar@hotmail.com
 
 ---
 
 ## ⚡ Fun Facts
 
-- Big fan of road trips 🚗, classic rock 🎸, classical music 🎼
+- Big fan of road trips 🚗, classic rock 🎸, classical music 🎼, soccer ⚽️
 - Enjoy writing blogs & poetry ✍️
 - Fitness & meditation enthusiast 🧘‍♂️
 
