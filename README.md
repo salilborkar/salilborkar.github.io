@@ -23,7 +23,7 @@ Outside of work, you'll find me road-tripping, immersed in classic rock & classi
 ## 🚀 Favorite Projects & Achievements
 
 - **[Data Visualization in Python](https://github.com/salilborkar/Data-Visualization-in-Python):** A comprehensive guide to visualizing data using Python & Matplotlib.
-- - **[Retrival Augemented Generation (RAG) in Python](https://github.com/salilborkar/simple-RAG-about-san-diego):** A simple conversational AI chatbot to ask questions and get answers to regarding my 2nd favorite city - San Diego.
+- **[Retrival Augemented Generation (RAG) in Python](https://github.com/salilborkar/simple-RAG-about-san-diego):** A simple conversational AI chatbot to ask questions and get answers to regarding my 2nd favorite city - San Diego.
 - **Cloud-Native Analytics Infrastructure:** Designed and built platforms for 2 healthcare clients and 5 SaaS products.
 - **Recommendation System:** Engineered a system that improved customer wellbeing by 25%.
 
