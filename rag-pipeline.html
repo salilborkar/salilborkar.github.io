@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enterprise RAG Pipeline | Product Case Study</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Exact same CSS as Cost Sentinel for consistency */
+        :root { --bg-color: #fafafa; --text-main: #111827; --text-muted: #6b7280; --card-bg: #ffffff; --border-color: #e5e7eb; --accent: #2563eb; }
+        body { font-family: 'Inter', sans-serif; background-color: var(--bg-color); color: var(--text-main); line-height: 1.6; margin: 0; padding: 0; display: flex; justify-content: center; }
+        .container { max-width: 800px; width: 100%; padding: 60px 20px; }
+        .back-link { display: inline-block; margin-bottom: 30px; color: var(--text-muted); text-decoration: none; font-weight: 500; font-size: 0.9rem; }
+        .back-link:hover { color: var(--text-main); }
+        article { background-color: var(--card-bg); border: 1px solid var(--border-color); border-radius: 8px; padding: 40px; }
+        h1 { font-size: 2rem; font-weight: 700; margin: 0 0 10px 0; letter-spacing: -0.02em; }
+        .subtitle { font-size: 1.1rem; color: var(--text-muted); margin: 0 0 30px 0; padding-bottom: 20px; border-bottom: 1px solid var(--border-color); }
+        h3 { font-size: 1.25rem; font-weight: 600; margin: 30px 0 15px 0; color: var(--text-main); }
+        p, li { color: var(--text-muted); font-size: 1rem; margin-bottom: 15px; }
+        ul { margin-bottom: 20px; padding-left: 20px; }
+        strong { color: var(--text-main); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
+        
+        <article>
+            <h1>Enterprise RAG Pipeline</h1>
+            <p class="subtitle">Secure Knowledge Retrieval Architecture</p>
+
+            <h3>1. Concept & Problem Discovery</h3>
+            <ul>
+                <li><strong>The Problem:</strong> Generic LLMs hallucinate or provide outdated answers when queried about proprietary enterprise data. Fine-tuning models is too slow and cost-prohibitive for dynamic documentation.</li>
+                <li><strong>The User:</strong> Internal employees needing instant, accurate answers from proprietary knowledge bases.</li>
+                <li><strong>The Hypothesis:</strong> A Retrieval-Augmented Generation (RAG) pipeline will ground the LLM's responses in internal company truth, reducing hallucination rates to near zero.</li>
+            </ul>
+
+            <h3>2. Product Requirements & Scoping (MVP)</h3>
+            <ul>
+                <li><strong>Core User Flow:</strong> The system searches the internal vector database, retrieves the top 3 most relevant context chunks, and forces the LLM to generate an answer <em>only</em> using those chunks.</li>
+                <li><strong>In Scope for V1:</strong> PDF and Markdown ingestion, semantic search retrieval, strict system prompting, and source citation.</li>
+                <li><strong>Out of Scope for V1:</strong> Real-time data syncing. V1 relies on batch ingestion to validate retrieval quality before scaling infrastructure complexity.</li>
+            </ul>
+
+            <h3>3. System Design & Architectural Trade-offs</h3>
+            <p></p>
+            <ul>
+                <li><strong>Chunking Strategy:</strong> Selected Semantic Chunking over Fixed-size. Fixed chunks destroy the semantic meaning of embeddings, degrading search relevance.</li>
+                <li><strong>Vector Database:</strong> Selected Local FAISS for the MVP. This ensured zero data leakage during prototyping by avoiding third-party cloud databases.</li>
+            </ul>
+
+            <h3>4. Execution & AI Guardrails</h3>
+            <ul>
+                <li><strong>Strict Prompt Engineering:</strong> The model is constrained to explicitly output "I do not have enough information" if the answer is not within the retrieved context.</li>
+                <li><strong>Citation Enforcement:</strong> Forced appending of file names and page numbers to every generated claim for human-in-the-loop verification.</li>
+            </ul>
+
+            <h3>5. Monitoring & Success Metrics</h3>
+            <ul>
+                <li><strong>Primary Metric (Quality):</strong> Hallucination Rate (Target: < 2%), measured using the RAGAS framework for Answer Faithfulness.</li>
+                <li><strong>Secondary Metric (Performance):</strong> Time to First Token (TTFT) < 1.5 seconds.</li>
+            </ul>
+        </article>
+    </div>
+</body>
+</html>
