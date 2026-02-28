@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cost Sentinel | Product Case Study</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #fafafa;
+            --text-main: #111827;
+            --text-muted: #6b7280;
+            --card-bg: #ffffff;
+            --border-color: #e5e7eb;
+            --accent: #2563eb;
+            --accent-hover: #1d4ed8;
+        }
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        .container {
+            max-width: 800px;
+            width: 100%;
+            padding: 60px 20px;
+        }
+        .back-link {
+            display: inline-block;
+            margin-bottom: 30px;
+            color: var(--text-muted);
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+        }
+        .back-link:hover {
+            color: var(--text-main);
+        }
+        article {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 40px;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            margin: 0 0 10px 0;
+            letter-spacing: -0.02em;
+        }
+        .subtitle {
+            font-size: 1.1rem;
+            color: var(--text-muted);
+            margin: 0 0 30px 0;
+            padding-bottom: 20px;
+            border-bottom: 1px solid var(--border-color);
+        }
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+            margin: 30px 0 15px 0;
+            color: var(--text-main);
+        }
+        p, li {
+            color: var(--text-muted);
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+        ul {
+            margin-bottom: 20px;
+            padding-left: 20px;
+        }
+        strong {
+            color: var(--text-main);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-link">&larr; Back to Portfolio</a>
+        
+        <article>
+            <h1>Cost Sentinel</h1>
+            <p class="subtitle">Zero-to-One Local FinOps VS Code Extension</p>
+
+            <h3>1. Concept & Problem Discovery</h3>
+            <ul>
+                <li><strong>The Problem:</strong> Cloud data warehouse compute costs are heavily influenced by developer query behavior. However, cost feedback loops are reactive. Developers only realize a query was expensive <em>after</em> the AWS/GCP bill arrives.</li>
+                <li><strong>The User:</strong> Data Engineers, Analytics Engineers, and Backend Developers.</li>
+                <li><strong>The Hypothesis:</strong> Shifting FinOps entirely to the left—into the IDE—will prevent accidental compute spend by intercepting expensive queries before execution.</li>
+            </ul>
+
+            <h3>2. Product Requirements & Scoping (MVP)</h3>
+            <ul>
+                <li><strong>Core User Flow:</strong> A developer types a SQL query in VS Code. The IDE instantly estimates the cost and displays a red visual alert if it exceeds a pre-set budget.</li>
+                <li><strong>In Scope for V1:</strong> Real-time cost estimation, local configuration menu for table pricing, status bar UI injection.</li>
+                <li><strong>Out of Scope for V1:</strong> Native cloud API integration. <em>Rationale:</em> Network latency per keystroke ruins the developer experience, and requiring IAM credentials introduces massive security friction.</li>
+            </ul>
+
+            <h3>3. System Design & Trade-offs</h3>
+            <p>To execute the MVP, I evaluated three architectural paths. I rejected Cloud APIs (too slow, privacy risk) and Regex Parsing (too fragile for nested queries).</p>
+            <p><strong>Selected Architecture: Local AST (Abstract Syntax Tree) Parsing.</strong> Extremely fast, works completely offline, zero credential risk, and accurately identifies table structures.</p>
+            
+            <p></p>
+
+            <h3>4. Execution & Development</h3>
+            <ul>
+                <li><strong>Platform Choice:</strong> Built specifically for VS Code, capturing ~70% of the target developer market share.</li>
+                <li><strong>Tech Stack:</strong> TypeScript, Node.js, `node-sql-parser`, VS Code Extension API.</li>
+                <li><strong>Security Posture:</strong> 100% Air-Gapped. The tool reads text locally and never phones home, guaranteeing zero exposure of PII/PHI.</li>
+            </ul>
+
+            <h3>5. Go-To-Market & Distribution</h3>
+            <ul>
+                <li><strong>Marketplace Launch:</strong> Published directly to the Visual Studio Code Marketplace.</li>
+                <li><strong>Open Source Community:</strong> Repository open-sourced on GitHub to drive peer review and developer trust.</li>
+            </ul>
+        </article>
+    </div>
+</body>
+</html>
