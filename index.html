@@ -179,11 +179,23 @@
         <div class="grid">
             
             <div class="card">
-                <h3>Cost Sentinel</h3>
-                <p>A zero-to-one local FinOps VS Code extension. Uses offline AST (Abstract Syntax Tree) parsing to provide real-time SQL cost estimation, intercepting runaway cloud spend with zero latency or PII/PHI risk.</p>
-                <a href="cost-sentinel.html" class="card-link">Read the PRD & Architecture Doc &rarr;</a>
+              <h3>Cost Sentinel <span style="font-weight: 400; font-size: 0.85em; color: #6b7280;">— predecessor to llm-cost-lint</span></h3>
+              <p>Built as a VS Code extension to give engineers real-time SQL cost estimation via offline AST parsing — runaway cloud spend caught before deployment, with zero latency and zero PII risk.</p>
+              <p>The execution worked. The distribution model didn't. Most enterprises lock down the VS Code Marketplace and block unapproved extensions, meaning the engineers who needed cost guardrails most couldn't install them. That insight drove the pivot to llm-cost-lint.</p>
+              <p><a href="[your existing PRD link]">Read the PRD &amp; Architecture Doc →</a></p>
             </div>
 
+            <div class="card">
+              <h3>llm-cost-lint</h3>
+              <p>A GitHub Action that scans pull requests for AWS Bedrock and Azure OpenAI API calls, estimates per-call and projected monthly cost, and posts the breakdown as a PR comment before code merges. Same shift-left FinOps thesis as Cost Sentinel — moved from the IDE (where enterprises block it) to CI/CD (where they actively want it).</p>
+              <p>Open source. MIT licensed. Available on the GitHub Actions Marketplace.</p>
+              <p>
+                <a href="https://github.com/salilborkar/llm-cost-lint">View on GitHub →</a>
+                &nbsp;·&nbsp;
+                <a href="https://github.com/salilborkar/llm-cost-lint-demo/pull/2">See it in action →</a>
+              </p>
+            </div>
+            
             <div class="card">
                 <h3>Enterprise RAG Pipeline</h3>
                 <p>Secure knowledge retrieval architecture. Engineered chunking strategies and established evaluation frameworks for vector databases to minimize hallucination rates for proprietary data ingestion.</p>
@@ -194,7 +206,7 @@
 
         <h2>Experience Highlights</h2>
         <ul>
-            <li><strong>Technical Program Manager/Technical Lead</strong> | Over 6 years of experience driving technical execution of data infrastructure/platform and data products.</li>
+            <li><strong>Technical Program Manager/Technical Lead</strong> | Over 16 years of experience driving technical execution of data infrastructure/platform and data products.</li>
             <li><em>Targeting Senior & Lead Technical Program Management roles.</em></li>
         </ul>
         <h2>Thought Leadership</h2>
