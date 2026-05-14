@@ -15,7 +15,7 @@
             --accent: #2563eb;
             --accent-hover: #1d4ed8;
         }
-
+ 
         body {
             font-family: 'Inter', sans-serif;
             background-color: var(--bg-color);
@@ -26,13 +26,13 @@
             display: flex;
             justify-content: center;
         }
-
+ 
         .container {
             max-width: 800px;
             width: 100%;
             padding: 60px 20px;
         }
-
+ 
         /* Hero Section */
         .hero {
             margin-bottom: 60px;
@@ -46,27 +46,27 @@
             margin-bottom: 20px;
             border: 1px solid var(--border-color);
         }
-
+ 
         h1 {
             font-size: 2.5rem;
             font-weight: 700;
             margin: 0 0 10px 0;
             letter-spacing: -0.02em;
         }
-
+ 
         .subtitle {
             font-size: 1.25rem;
             color: var(--text-muted);
             margin: 0 0 20px 0;
             font-weight: 400;
         }
-
+ 
         .bio {
             font-size: 1rem;
             margin-bottom: 30px;
             max-width: 600px;
         }
-
+ 
         .links a {
             display: inline-block;
             margin-right: 15px;
@@ -77,27 +77,27 @@
             font-size: 0.9rem;
             transition: all 0.2s;
         }
-
+ 
         .btn-primary {
             background-color: var(--accent);
             color: white;
             border: 1px solid var(--accent);
         }
-
+ 
         .btn-primary:hover {
             background-color: var(--accent-hover);
         }
-
+ 
         .btn-secondary {
             background-color: transparent;
             color: var(--text-main);
             border: 1px solid var(--border-color);
         }
-
+ 
         .btn-secondary:hover {
             background-color: #f3f4f6;
         }
-
+ 
         /* Section Headers */
         h2 {
             font-size: 1.5rem;
@@ -106,7 +106,7 @@
             padding-bottom: 10px;
             border-bottom: 1px solid var(--border-color);
         }
-
+ 
         /* Project Cards */
         .grid {
             display: grid;
@@ -115,7 +115,7 @@
             margin-bottom: 60px;
             align-items: start;
         }
-
+ 
         .card {
             background-color: var(--card-bg);
             border: 1px solid var(--border-color);
@@ -123,30 +123,30 @@
             padding: 24px;
             transition: transform 0.2s, box-shadow 0.2s;
         }
-
+ 
         .card:hover {
             transform: translateY(-4px);
             box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
         }
-
+ 
         .card h3 {
             margin: 0 0 6px 0;
             font-size: 1.2rem;
             font-weight: 600;
         }
-
+ 
         .card-subtitle {
             margin: 0 0 12px 0;
             font-size: 0.85em;
             color: #6b7280;
         }
-
+ 
         .card-preview {
             color: var(--text-muted);
             font-size: 0.95rem;
             display: inline;
         }
-
+ 
         .more-btn {
             display: inline;
             background: none;
@@ -158,41 +158,41 @@
             padding: 0 0 0 4px;
             font-family: 'Inter', sans-serif;
         }
-
+ 
         .more-btn:hover {
             text-decoration: underline;
         }
-
+ 
         .card-expanded {
             display: none;
             margin-top: 10px;
         }
-
+ 
         .card-expanded p {
             color: var(--text-muted);
             font-size: 0.95rem;
             margin: 0 0 12px 0;
         }
-
+ 
         .card.is-expanded .card-expanded {
             display: block;
         }
-
+ 
         .card-links {
             margin-top: 16px;
         }
-
+ 
         .card-link {
             text-decoration: none;
             color: var(--accent);
             font-weight: 500;
             font-size: 0.9rem;
         }
-
+ 
         .card-link:hover {
             text-decoration: underline;
         }
-
+ 
         /* Footer */
         footer {
             text-align: center;
@@ -200,7 +200,7 @@
             font-size: 0.85rem;
             margin-top: 40px;
         }
-
+ 
         @media (max-width: 700px) {
             .grid {
                 grid-template-columns: 1fr;
@@ -209,7 +209,7 @@
     </style>
 </head>
 <body>
-
+ 
     <div class="container">
         <div class="hero">
             <img src="salil.JPG" alt="Salil Borkar" class="profile-pic">
@@ -222,10 +222,10 @@
                 <a href="https://github.com/salilborkar" target="_blank" class="btn-secondary">GitHub</a>
             </div>
         </div>
-
+ 
         <h2>Technical Projects</h2>
         <div class="grid">
-
+ 
             <!-- Cost Sentinel -->
             <div class="card" id="card-sentinel">
                 <h3>Cost Sentinel</h3>
@@ -234,11 +234,9 @@
                 <div class="card-expanded">
                     <p>to give engineers real-time SQL cost estimation via offline AST parsing — runaway cloud spend caught before deployment, with zero latency and zero PII risk.</p>
                     <p>The execution worked. The distribution model didn't. Most enterprises block unapproved VS Code extensions, so the engineers who needed cost guardrails most couldn't install them. That insight drove the pivot to llm-cost-lint.</p>
-                    <div class="card-links">
-                    </div>
                 </div>
             </div>
-
+ 
             <!-- llm-cost-lint -->
             <div class="card" id="card-lint">
                 <h3>llm-cost-lint</h3>
@@ -254,7 +252,7 @@
                     </div>
                 </div>
             </div>
-
+ 
             <!-- Argus -->
             <div class="card" id="card-argus">
                 <h3>Argus</h3>
@@ -268,21 +266,21 @@
                     </div>
                 </div>
             </div>
-
+ 
         </div>
-
+ 
         <h2>Experience Highlights</h2>
         <ul>
-            <li><strong>Technical Product Manager/Technical Lead</strong> | Over 16 years of experience driving technical execution of data infrastructure/platform and data products.</li>
+            <li><strong>Technical Product Manager</strong> | Over 16 years of experience driving technical execution of data infrastructure/platform and data products.</li>
             <li><em>Available for Technical Product Manager &amp; EPM roles.</em>
                 &nbsp;<a href="mailto:co.borkar@gmail.com">Get in touch →</a></li>
         </ul>
-
+ 
         <footer>
             &copy; 2026 Salil Borkar. Built in San Diego, CA.
         </footer>
     </div>
-
+ 
     <script>
         function toggleCard(cardId, btn) {
             const card = document.getElementById(cardId);
@@ -291,165 +289,6 @@
             btn.textContent = isExpanded ? 'more' : 'less';
         }
     </script>
-
-</body>
-</html>        .bio {
-            font-size: 1rem;
-            margin-bottom: 30px;
-            max-width: 600px;
-        }
-
-        .links a {
-            display: inline-block;
-            margin-right: 15px;
-            padding: 10px 20px;
-            border-radius: 6px;
-            text-decoration: none;
-            font-weight: 500;
-            font-size: 0.9rem;
-            transition: all 0.2s;
-        }
-
-        .btn-primary {
-            background-color: var(--accent);
-            color: white;
-            border: 1px solid var(--accent);
-        }
-
-        .btn-primary:hover {
-            background-color: var(--accent-hover);
-        }
-
-        .btn-secondary {
-            background-color: transparent;
-            color: var(--text-main);
-            border: 1px solid var(--border-color);
-        }
-
-        .btn-secondary:hover {
-            background-color: #f3f4f6;
-        }
-
-        /* Section Headers */
-        h2 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-            padding-bottom: 10px;
-            border-bottom: 1px solid var(--border-color);
-        }
-
-        /* Project Cards */
-        .grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
-            gap: 20px;
-            margin-bottom: 60px;
-        }
-
-        .card {
-            background-color: var(--card-bg);
-            border: 1px solid var(--border-color);
-            border-radius: 8px;
-            padding: 24px;
-            transition: transform 0.2s, box-shadow 0.2s;
-        }
-
-        .card:hover {
-            transform: translateY(-4px);
-            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
-        }
-
-        .card h3 {
-            margin: 0 0 10px 0;
-            font-size: 1.2rem;
-            font-weight: 600;
-        }
-
-        .card p {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            margin: 0 0 20px 0;
-        }
-
-        .card-link {
-            text-decoration: none;
-            color: var(--accent);
-            font-weight: 500;
-            font-size: 0.9rem;
-        }
-
-        .card-link:hover {
-            text-decoration: underline;
-        }
-
-        /* Footer */
-        footer {
-            text-align: center;
-            color: var(--text-muted);
-            font-size: 0.85rem;
-            margin-top: 40px;
-        }
-    </style>
-</head>
-<body>
-
-    <div class="container">
-        <div class="hero">
-            <img src="salil.JPG" alt="Salil Borkar" class="profile-pic">
-            <h1>Salil Borkar</h1>
-            <p class="subtitle">Technical Product Manager | Cloud Data & AI Infrastructure | Agentic AI </p>
-            <p class="bio">Managing high-signal technical products shipping technical products that solve real problems.</p>
-            <div class="links">
-                <a href="https://linkedin.com/in/salilborkar" target="_blank" class="btn-primary">LinkedIn</a>
-                <a href="https://drive.google.com/file/d/1Q3tVfARR4YL486ToGtoKFZYKl1P6IRg9/view?usp=share_link" target="_blank" class="btn-secondary">Resume</a>
-                <a href="https://github.com/salilborkar" target="_blank" class="btn-secondary">GitHub</a>
-            </div>
-        </div>
-
-        <h2>Technical Projects</h2>
-        <div class="grid">
-            
-            <div class="card">
-              <h3>Cost Sentinel</h3>
-              <p style="margin-top: -0.5em; font-size: 0.85em; color: #6b7280;"><em>Predecessor to llm-cost-lint</em></p>
-              <p>Built as a VS Code extension to give engineers real-time SQL cost estimation via offline AST parsing — runaway cloud spend caught before deployment, with zero latency and zero PII risk.</p>
-              <p>The execution worked. The distribution model didn't. Most enterprises block unapproved VS Code extensions, so the engineers who needed cost guardrails most couldn't install them. That insight drove the pivot to llm-cost-lint.</p>
-            </div>
-
-            <div class="card">
-              <h3>llm-cost-lint</h3>
-              <p>A GitHub Action that scans pull requests for AWS Bedrock and Azure OpenAI API calls, estimates per-call and projected monthly cost, and posts the breakdown as a PR comment before code merges. Same shift-left FinOps thesis as Cost Sentinel — moved from the IDE (where enterprises block it) to CI/CD (where they actively want it).</p>
-              <p>Open source. MIT licensed. Available on the GitHub Actions Marketplace.</p>
-              <p>
-                <a href="https://github.com/salilborkar/llm-cost-lint">View on GitHub →</a>
-                &nbsp;·&nbsp;
-                <a href="https://github.com/salilborkar/llm-cost-lint-demo/pull/2">See it in action →</a>
-              </p>
-            </div>
-            
-            <div class="card">
-                <h3>Argus</h3>
-                <p style="margin-top: -0.5em; font-size: 0.85em; color: #6b7280;"><em>Multi-Agent Financial Research System</em></p>
-                <p>Three specialized AI agents — market sentiment, price analysis, and SEC 10-K filing intelligence — orchestrated by a Gemini-powered reasoning loop. The orchestrator dynamically sets each agent's inputs based on prior agent outputs: sentiment themes drive the chart date range and generate targeted RAG questions.</p>
-                <p>Shared context bus, structured audit trail, and Streamlit UI. Fully local embeddings (sentence-transformers + ChromaDB). 10-K filings auto-downloaded from SEC EDGAR.</p>
-                <p>
-                    <a href="https://github.com/salilborkar/argus" class="card-link">View on GitHub →</a>
-                </p>
-            </div>
-
-        </div>
-
-        <h2>Experience Highlights</h2>
-        <ul>
-            <li><strong>Technical Product Manager/Technical Lead</strong> | Over 16 years of experience driving technical execution of data infrastructure/platform and data products.</li>
-            <li><em>Available for Product Manager &amp; EPM roles.</em>
-                &nbsp;<a href="mailto:co.borkar@gmail.com">Get in touch →</a></li>
-        </ul>
-        <footer>
-            &copy; 2026 Salil Borkar. Built in San Diego, CA.
-        </footer>
-    </div>
-
+ 
 </body>
 </html>
